@@ -9,8 +9,6 @@ import { MultiValue, SingleValue } from 'react-select';
 import { getWeekdayOptions } from '@/utils/dateUtils';
 
 const CampaignForm: React.FC<CampaignFormProps> = ({ campaign, onSubmit, onClose }) => {
-    // let nextDate = new Date();
-    // nextDate.setDate(nextDate.getUTCDate() + 1);
     const [type, setType] = useState(campaign?.type || 'Cost per Order');
     const [startDate, setStartDate] = useState<Date | null>(campaign?.startDate || new Date());
     const [endDate, setEndDate] = useState<Date | null>(campaign?.endDate || new Date());
